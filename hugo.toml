@@ -5,6 +5,7 @@ theme = 'od'
 
 [permalinks]
   post = "/:title/"
+  page = "/:title/"
 
 [markup]
   [markup.asciidocExt]

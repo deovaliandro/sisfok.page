@@ -1,0 +1,12 @@
+---
+title       : About
+author      : Deo Valiandro. M <<valiandrod@gmail.com>>
+layout      : post
+math        : true
+permalink   : /about/
+desc        : >
+    Daftar perubahan dan pembaharuan web ini.
+finish      : ∞
+---
+
+Amsal 1 : 7a "Takut akan TUHAN adalah permulaan pengetahuan"

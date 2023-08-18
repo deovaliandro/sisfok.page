@@ -2,8 +2,10 @@
 
 <h1>{{ .Title }}</h1>
 <span class="author">
-  {{ $.Param "author" | markdownify }},
+  {{ $.Param "author" | markdownify }}
+  {{ with $.Param "co-author" }},
   {{ $.Param "co-author" | markdownify }}
+  {{ end }}
 </span>
 
 <span class="date">
