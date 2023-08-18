@@ -3,6 +3,7 @@ title       : Pengantar Python
 author      : Deo Valiandro. M <<valiandrod@gmail.com>>
 co-author   : Bob <<bob@ilkom.my.id>>
 layout      : post
+date        : 2023-07-11
 time        : 2023-07-11
 math        : true
 slug        : /pp-python/

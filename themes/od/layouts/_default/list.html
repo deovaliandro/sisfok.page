@@ -1,12 +1,16 @@
-{{ .Content }}
+{{ partial "header.html" . }}
 
-<ul>
+<h1>Welcome</h1>
+
+<ol>
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-  {{ range (where $pages "Section" "!=" "") }}
+  {{ range (where $pages "Section" "!=" "page") }}
   <li>
-    <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+    <span class="date">{{ .Date.Format "2006/01/02" }}</span> $\cdot$
     <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
   </li>
   {{ end }}
-</ul>
+</ol>
+
+{{ partial "footer.html" . }}
