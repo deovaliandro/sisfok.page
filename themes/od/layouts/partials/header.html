@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }}</title>
+
+  <!-- icon -->
+  <link rel="shortcut icon" href="/icon.svg" type="image/svg">
+
+  {{ $style := resources.Get "scss/new.scss" | toCSS | minify | fingerprint }}
+  <link href="{{ $style.RelPermalink }}" rel="stylesheet">
+
+  <!-- mathjax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$']]
+      }
+    };
+  </script>
+
+</head>
+
+<body>
+
+  <!-- navigator -->
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/changelog/">Changelog</a>
+  </nav>
