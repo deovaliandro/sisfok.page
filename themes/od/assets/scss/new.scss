@@ -55,7 +55,17 @@ a {
   border-bottom: 1px solid black;
 }
 
-nav {
+#TableOfContents {
+  ul {
+    padding-left: 1rem;
+    li {
+      font-variant-caps: petite-caps;
+      font-size: 1rem;
+    }
+  }
+}
+
+.nav {
   display: flex;
   padding-top: 2ch;
   gap: 1ch;
@@ -300,7 +310,7 @@ footer {
   font-style: oblique;
 }
 
-.date {
+.date, .author, .co-author {
   text-align: center;
   margin-bottom: 4ch;
 }

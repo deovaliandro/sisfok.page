@@ -18,6 +18,8 @@ theme = 'od'
     trace = false
     verbose = false
     workingFolderCurrent = false
+    [markup.tableOfContents]
+      endLevel = 5
     [markup.asciidocExt.attributes]
       allow-uri-read = ""
       source-highlighter = "rouge"

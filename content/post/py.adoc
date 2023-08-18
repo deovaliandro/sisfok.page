@@ -1,6 +1,7 @@
 ---
 title       : Pengantar Python
-signed-by   : Deo Valiandro. M <valiandrod@gmail.com>
+author      : Deo Valiandro. M <<valiandrod@gmail.com>>
+co-author   : Bob <<bob@ilkom.my.id>>
 layout      : post
 time        : 2023-07-11
 math        : true
@@ -16,6 +17,7 @@ finish      : draft
 ---
 
 :toc:
+:toclevels: 4
 
 Python adalah bahasa pemrograman
 [.wiki]#https://en.wikipedia.org/wiki/High-level_programming_language[high-level]#

@@ -1,6 +1,35 @@
 {{ partial "header.html" . }}
-  <h1>{{ .Title }}</h1>
-  <main>
-    {{ .Content }}
-  </main>
+
+<h1>{{ .Title }}</h1>
+<span class="author">
+  {{ $.Param "author" | markdownify }},
+  {{ $.Param "co-author" | markdownify }}
+</span>
+
+<span class="date">
+  <i>
+    {{ with $.Param "time" }} {{ $.Param "time" | time.Format ":date_full" }} {{ else }} ∞ {{ end }}
+    — {{ now | time.Format ":date_full" }} </i> $\cdot$
+    <i>{{ $.Param "finish" }}</i> $\cdot$
+    <a href="{{ $.Param "link" }}#bibliography">bibliography</a> $\cdot$
+    <a href="{{ $.Param "link" }}#footnotes">footnote</a>
+</span>
+
+<aside>
+  <div class="toc">
+    <details open>
+      <summary>Daftar Isi</summary>
+      <div class="toc">
+        {{ .TableOfContents }}
+      </div>
+    </details>
+  </div>
+  <div class="pengantar">
+    {{ $.Param "desc" }}
+  </div>
+</aside>
+
+<main>
+  {{ .Content }}
+</main>
 {{ partial "footer.html" . }}
