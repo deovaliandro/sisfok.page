@@ -1,2 +1,9 @@
 .hugo_build.lock
 run
+
+/public/
+/resources/
+.DS_Store
+node_modules
+dist
+tmp
