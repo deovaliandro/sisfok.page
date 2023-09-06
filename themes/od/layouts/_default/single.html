@@ -19,7 +19,7 @@
 
 <aside>
   <div class="toc">
-    <details open>
+    <details>
       <summary>Daftar Isi</summary>
       <div class="toc">
         {{ .TableOfContents }}
@@ -27,7 +27,12 @@
     </details>
   </div>
   <div class="pengantar">
-    {{ $.Param "desc" }}
+    <details>
+      <summary>Sekedar Informasi</summary>
+      <div>
+        {{ $.Param "desc" }}
+      </div>
+    </details>
   </div>
 </aside>
 
