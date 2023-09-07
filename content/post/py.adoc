@@ -26,26 +26,46 @@ yang mudah dipelajari tetapi merupakan bahasa yang poweful. Dalam tulisan ini,
 kami akan menggunakan [.py]#https://www.python.org/[Python 3.10]#.
 
 
-== hello world
+== Hello World
 
-Hello world menandakan kelahiran:
+#Hello world# menandakan kode pertama yang ditulis.
 
 [source, python]
 ----
 print("Meoworld!")
 ----
 
+Hasilnya
 
-.Hasilnya
-[%collapsible]
-====
 [source, bash]
 ----
 Meoworld!
 ----
-====
 
-== variabel
+== Input/Output
+
+Untuk menerima input,
+
+[source, python]
+----
+nama = input("Masukkan nama anda:")
+----
+
+Input akan disimpan di dalam variabel `nama`. Untuk menampilkannya:
+
+[source, python]
+----
+print(nama)
+----
+
+
+== Variabel
+
+Variabel adalah nama dari suatu lokasi memori di komputer untuk menyimpan sebuah
+nilai.
+
+Karena Python adalah dynamic type yang berdasar pada duck typing tidak mengenal deklarasi variabel, variabel dibuat ketika kita memasukkan
+nilai kedalamnya.
 
 Nama variabel haruslah [.wiki]#https://en.wikipedia.org/wiki/Letter_case[lowercase]#,
 jika lebih dari satu kata maka dipisahkan dengan kbd:[_]. Hindari menggunakan
@@ -60,9 +80,20 @@ age = 12
 address = "Makassar"
 ----
 
-== tipe data
+Contoh yang buruk:
 
-=== bilangan
+[source, python]
+----
+a = "Makassar"
+x = 7
+----
+
+Nama variabelnya ambigu dan menyulitkan pembaca untuk memahami penggunaan dari
+variabel tersebut.
+
+== Tipe Data
+
+=== Bilangan
 
 Python bersifat
 [.wiki]#https://en.wikipedia.org/wiki/Strong_and_weak_typing[strongly typed]#
@@ -76,21 +107,19 @@ print(type(3.14))
 print(type(1j))
 ----
 
-.Menghasilkan
-[%collapsible]
-====
+Menghasilkan
+
 [source, bash]
 ----
 <class 'int'>
 <class 'float'>
 <class 'complex'>
 ----
-====
 
 
-=== string
+=== String
 
-String adalah array byte, sehingga char adalah string dgn panjang 1.
+String adalah `arrays of bytes`, sehingga char adalah string dgn panjang 1.
 Karena array, maka segala jenis operasi array dapat digunakan.
 
 [source, python]
@@ -101,15 +130,14 @@ print(name[1])
 print(name[:3])
 ----
 
-.Menghasilkan
-[%collapsible]
-====
+Menghasilkan
+
 [source, bash]
 ----
 i
 Gin
 ----
-====
+
 
 === list
 

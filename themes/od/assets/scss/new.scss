@@ -206,7 +206,8 @@ pre {
 code:not(pre>code) {
   padding: .3ch .6ch;
   border-radius: 1ch;
-  border: 1px solid 'DM Mono';
+  border: 1px solid #e5e5e5;
+  background-color: #f6f8fa;
 }
 
 mark {
