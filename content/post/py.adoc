@@ -145,3 +145,56 @@ List adalah array dalam Python. List tidak harus memiliki tipe data yang sama.
 
 [source, python]
 data = [1, 2.2, "name"]
+
+
+== Control Flow
+
+=== Pengkondisian
+
+Python memiliki pengkondisian `if/elif/else`, dan `case/switch` yang ditambahkan
+pada Python 10.
+
+[source, python]
+----
+number = int(input("Masukkan angka: "))
+
+if number > 0:
+    print("Angkanya positif")
+elif number == 0:
+    print("Angkanya adalah 0")
+elif number < 0:
+    print("Angkanya negatif")
+else:
+    print("Angka lain-lain ini")
+----
+
+=== Perulangan
+
+For pada Python menggunakan iterasi atas item sequence misal string atau list,
+berbeda dengan C atau Pascal yang menggunakan iterasi atas angka.
+
+[source, python]
+----
+jenis_makanan = ["bakso", "sate", "gado-gado", "coto", "soto"]
+
+for makanan in jenis_makanan:
+    print(makanan)
+----
+
+namun jika ingin menggunakan iterasi atas angka seperti gaya C, maka bisa
+menggunakan `range()`.
+
+[source, python]
+----
+for i in range(5):
+    print(i)
+----
+
+atau
+
+[source, python]
+----
+list(range(5, 10))
+list(range(0, 10, 3))
+list(range(-10, -100, -30))
+----
